@@ -1,7 +1,21 @@
-Title: Kirby Starterkit
+Title: 
+
+Snap One
+
 ----
-Author: Bastian Allgeier GmbH
+
+Author: 
+
+Luke Jacobs
+
 ----
-Description: This is Kirby's Starterkit.
+
+Description: 
+
+SnapOne, Inc. Corporate Website
+
 ----
-Copyright: © 2009-(date: Year) (link: http://bastianallgeier.com text: Kirby)
+
+Copyright: 
+
+© (date: Year) (link: www.snapone.com text: SnapOne, Inc.)

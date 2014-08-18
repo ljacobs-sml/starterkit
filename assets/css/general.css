@@ -1,0 +1,101 @@
+/*
+ :::  Reset
+-------------------------------------------------- */
+*, *:before, *:after		{position: relative; margin: 0; padding: 0; border: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary 					{display: block;}
+ol, ul						{list-style: none;}
+
+
+
+/*
+ :::  Site
+-------------------------------------------------- */
+html						{height: 101%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+body						{background:#222}
+
+
+
+/*
+ :::  Header
+-------------------------------------------------- */
+header						{text-align:center;}
+header .logo				{}
+header .logo img			{margin:0 auto;}
+header .slogan				{border-top:1px solid #fff; border-bottom:1px solid #fff; width:auto; padding:10px 0; margin:10px 0;letter-spacing:0.04em; color:#fff; text-shadow:1px 1px #000; }
+
+header nav					{}
+header nav .menu			{display:inline-block;}
+header nav .menu li			{display:inline-block; width:auto; padding:0 10px;}
+header nav .menu li a		{display:block; width:auto;}
+
+
+
+/*
+ :::  Buttons
+-------------------------------------------------- */
+.btn {
+  display: inline-block;
+  line-height: 1em;
+  font-weight: 600;
+  color: #222;
+}
+
+
+
+/*
+ :::  Main
+-------------------------------------------------- */
+.hero						{background:#efefef;}
+
+
+/*
+ :::  Nextprev nav
+-------------------------------------------------- */
+.nextprev					{padding: 1em 0;}
+.nextprev .prev				{float: left;}
+.nextprev .next				{float: right;}
+
+
+
+/*
+ :::  Footer
+-------------------------------------------------- */
+footer						{}
+
+
+
+/*
+ :::  Pix
+-------------------------------------------------- */
+img							{display: block; max-width: 100%;}
+
+
+
+/*
+ :::  Clearfix
+-------------------------------------------------- */
+.cf:after					{content: ""; display: table; clear: both;}
+
+
+
+.gradient1 {
+background: #222222;
+background: -moz-linear-gradient(45deg,  #222222 0%, #403f59 100%);
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#222222), color-stop(100%,#403f59));
+background: -webkit-linear-gradient(45deg,  #222222 0%,#403f59 100%);
+background: -o-linear-gradient(45deg,  #222222 0%,#403f59 100%);
+background: -ms-linear-gradient(45deg,  #222222 0%,#403f59 100%);
+background: linear-gradient(45deg,  #222222 0%,#403f59 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#403f59',GradientType=1 );
+}

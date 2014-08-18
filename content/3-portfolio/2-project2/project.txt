@@ -1,0 +1,21 @@
+Title: 
+
+project2
+
+----
+
+Year: 
+
+2014
+
+----
+
+Text: 
+
+Project #2 text.
+
+----
+
+Tags: 
+
+Project

@@ -1,6 +1,6 @@
 Title: 
 
-Snap One
+Title
 
 ----
 
@@ -12,10 +12,17 @@ Luke Jacobs
 
 Description: 
 
-SnapOne, Inc. Corporate Website
+Full Service Web Design & Management
 
 ----
 
 Copyright: 
 
-© (date: Year) (link: www.snapone.com text: SnapOne, Inc.)
+Follow us on (link: # text: Google+) and (link: # text: Facebook)
+© (date: Year) (link: http://www.crispconcepts.net text: CrispConcepts.net)
+
+----
+
+Slogan: 
+
+Full Service Web Design & Management

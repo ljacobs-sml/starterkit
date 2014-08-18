@@ -1,22 +1,24 @@
 <nav role="navigation">
 
   <ul class="menu cf">
-    <?php foreach($pages->visible() as $p): ?>
+    <? foreach($pages->visible() as $p): ?>
     <li>
-      <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo html($p->title()) ?></a>
+      <h6><a <? e($p->isOpen(), ' class="active"') ?> href="<? echo $p->url() ?>"><? echo html($p->title()) ?></a></h6>
 
-      <?php if($p->hasVisibleChildren()): ?>
+	<!-- hide submenu
+      <? //if($p->hasVisibleChildren()): ?>
       <ul class="submenu">
-        <?php foreach($p->children()->visible() as $p): ?>
+        <? //foreach($p->children()->visible() as $p): ?>
         <li>
-          <a href="<?php echo $p->url() ?>"><?php echo html($p->title()) ?></a>
+          <a href="<? //echo $p->url() ?>"><? //echo html($p->title()) ?></a>
         </li>
-        <?php endforeach ?>
+        <? //endforeach ?>
       </ul>
-      <?php endif ?>
-
+      <? //endif ?>
+	-->
+	
     </li>
-    <?php endforeach ?>
+    <? endforeach ?>
   </ul>
 
 </nav>

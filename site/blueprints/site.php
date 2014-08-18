@@ -6,6 +6,9 @@ fields:
   title:
     label: Title
     type:  text
+  slogan:
+    label: Slogan
+    type:  text
   author:
     label: Author
     type:  text

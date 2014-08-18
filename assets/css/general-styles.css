@@ -1,0 +1,98 @@
+/*
+ :::  Button Classes
+-------------------------------------------------- */
+
+/* standard */
+.btn,
+.ui-btn		{display:inline-block; padding:3px 8px; color:#aaa; text-transform:uppercase; border-radius:60px; max-height:60px; border:2px solid #aaa; font-size:12px;}
+
+/* style overrides */
+.btn.sml		{padding:2px 5px;}
+.btn.med		{padding:5px 10px;}
+.btn.lrg		{padding:10px 15px;}
+.btn.big		{padding:15px 20px;}
+.btn.sz12		{font-size:12px;}
+.btn.sz14		{font-size:14px;}
+.btn.sz16		{font-size:16px;}
+.btn.sz18		{font-size:18px;}
+.btn.gray		{color:#888; border-color:#888;}
+.btn.black		{color:#222; border-color:#222;}
+.btn.white		{color:#fff; border-color:#fff;}
+.btn.wtrans		{color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.5);}
+.btn.btrans		{color:rgba(0,0,0,0.8); border-color:rgba(0,0,0,0.5);}
+.btn.rect		{border-radius:8px;}
+.btn.rect.sml	{border-radius:5px;}
+.btn.rect.med	{border-radius:10px;}
+.btn.rect.lrg	{border-radius:12px;}
+.btn.rect.big	{border-radius:15px;}
+.btn.white.bg,
+.btn.wtrans.bg	{background:rgba(0,0,0,0.2);}
+.btn.black.bg,
+.btn.btrans.bg	{background:rgba(255,255,255,0.2);}
+
+@media only screen and (max-width: 1440px) {
+}
+@media only screen and (max-width: 960px) {
+}
+@media only screen and (max-width: 768px) {
+.btn.sml		{padding:1px 3px;}
+.btn.med		{padding:3px 8px;}
+.btn.lrg		{padding:8px 13px;}
+.btn.big		{padding:12px 17px;}
+.btn.sz12		{font-size:10px;}
+.btn.sz14		{font-size:12px;}
+.btn.sz16		{font-size:14px;}
+.btn.sz18		{font-size:16px;}
+}
+@media only screen and (max-width: 480px) {
+.btn.sml		{padding:1px 3px;}
+.btn.med		{padding:3px 5px;}
+.btn.lrg		{padding:5px 10px;}
+.btn.big		{padding:10px 15px;}
+.btn.sz12		{font-size:10px;}
+.btn.sz14		{font-size:11px;}
+.btn.sz16		{font-size:12px;}
+.btn.sz18		{font-size:13px;}
+}
+
+.btn.clean		{border:none; padding:0;}
+
+/* arrow if btn is href */
+a.btn:after,
+.btn.href:after		{display:inline-block; content:">"; padding-left:5px; top:-1px;}
+
+a.btn.reverse:after,
+.btn.reverse:after	{display:none;}
+a.btn.reverse:before,
+.btn.reverse:before	{display:inline-block; content:"<"; padding-right:5px; top:-1px;}
+
+/* hover states if btn is href */
+a.btn:hover,
+.ui-btn:hover			{color:#222; border:2px solid #222;}
+a.btn.gray:hover,
+.ui-btn.gray:hover		{color:#fff; border:2px solid #fff;}
+a.btn.white:hover,
+.ui-btn.white:hover		{color:#fff; border:2px solid #fff; background:rgba(255,255,255,0.1);}
+a.btn.black:hover,
+.ui-btn.black:hover		{color:#222; border:2px solid #222;}
+a.btn.wtrans:hover,
+.ui-btn.wtrans:hover	{color:rgba(255,255,255,1); border-color:rgba(255,255,255,1);}
+a.btn.wtrans:hover,
+.ui-btn.wtrans:hover	{color:rgba(0,0,0,1); border-color:rgba(0,0,0,1);}
+
+.anti-btn		{padding:0; border:0px solid transparent; border-radius:0;}
+.anti-btn:hover	{border:0px solid transparent;}
+
+/*
+ :::  Gradients
+-------------------------------------------------- */
+.gradient {
+background: rgb(255,255,255);
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(239,239,239,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(239,239,239,1)));
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%);
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%);
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%);
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(239,239,239,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 );
+}

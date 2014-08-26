@@ -9,7 +9,6 @@ fields:
   copy:
     label: Content
     type:  textarea
-    size:  large
   layout:
     label: Layouts
     type:  select

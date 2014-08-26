@@ -22,55 +22,56 @@ ol, ul						{list-style: none;}
  :::  Site
 -------------------------------------------------- */
 html						{height: 101%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
-body						{background:#222}
+body						{}
 
 
+/*****	Header
+*******************************************/
 
-/*
- :::  Header
--------------------------------------------------- */
 header						{text-align:center;}
-header .logo				{}
-header .logo img			{margin:0 auto;}
-header .slogan				{border-top:1px solid #fff; border-bottom:1px solid #fff; width:auto; padding:10px 0; margin:10px 0;letter-spacing:0.04em; color:#fff; text-shadow:1px 1px #000; }
 
-header nav					{}
+/*****	Logo		**********/
+
+header .logo				{}
+header .logo img			{margin:0 auto; width:auto; height:auto; max-width:100%;}
+header .slogan				{display:none; border-top:1px solid #fff; border-bottom:1px solid #fff; width:auto; padding:10px 0; margin:10px 0;letter-spacing:0.04em; color:#fff; text-shadow:1px 1px #000; text-align:center;}
+
+/*****	Menu		**********/
+
+header nav					{text-align:center;}
 header nav .menu			{display:inline-block;}
 header nav .menu li			{display:inline-block; width:auto; padding:0 10px;}
 header nav .menu li a		{display:block; width:auto;}
 
+@media only screen and (max-width: 768px) {
+header						{background:rgba(255,255,255,0.4); top:0; bottom:0; left:0; right:0; position:absolute;}
+header .logo img			{width:300px;}
+header .slogan				{border-top:1px solid #222; border-bottom:1px solid #222; color:#222; text-shadow:none; font-weight:bold;}
 
+header nav .menu li			{padding:0 5px;}
+header nav .menu li a		{text-shadow:none;}
 
-/*
- :::  Buttons
--------------------------------------------------- */
-.btn {
-  display: inline-block;
-  line-height: 1em;
-  font-weight: 600;
-  color: #222;
+}
+
+@media only screen and (max-width: 480px) {
 }
 
 
+/*****	Buttons
+*******************************************/
 
-/*
- :::  Main
--------------------------------------------------- */
+.btn						{display: inline-block; line-height: 1em; font-weight: 600; color: #222;}
+
+
+/*****	Main
+*******************************************/
+
 .hero						{background:#efefef;}
 
 
-/*
- :::  Nextprev nav
--------------------------------------------------- */
-.nextprev					{padding: 1em 0;}
-.nextprev .prev				{float: left;}
-.nextprev .next				{float: right;}
+/*****	Footer
+*******************************************/
 
-
-
-/*
- :::  Footer
--------------------------------------------------- */
 footer						{}
 
 

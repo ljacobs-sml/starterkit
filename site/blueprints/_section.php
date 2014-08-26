@@ -1,12 +1,12 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Page
-pages: true
-files: true
+title: Section (content block)
+pages: false
+files: false
 fields:
   title:
     label: Title
     type:  text
   copy:
     label: Content
-    type:  textarea
+    type:  text

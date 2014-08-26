@@ -1,33 +1,30 @@
 <?php
 
 /*
-
----------------------------------------
-License Setup
----------------------------------------
-
-Please add your license key, which you've received
-via email after purchasing Kirby.
-
-If you have no license yet, please buy one:
-http://getkirby.com/buy and support an indie developer.
-
-You are not allowed to run a website without a valid license key.
-Please read the End User License Agreement for more information:
-http://getkirby.com/license
-
-*/
+ *	Licensing
+ **************************************/
 
 c::set('license', 'put your license key here');
 
+
 /*
+ *	Kirby Configuration
+ **************************************/
 
----------------------------------------
-Kirby Configuration
----------------------------------------
+c::set('url', '/');
 
-By default you don't have to configure anything to
-make Kirby work. For more fine-grained configuration
-of the system, please check out http://getkirby.com/docs
 
-*/
+/*
+ *	Global Variables
+ **************************************/
+ 
+
+/*
+ *	Site Cache Settings
+ **************************************/
+
+// c::set('cache', true);
+// c::set('cache.autoupdate', false);
+// c::set('cache.data', true);
+// c::set('cache.html', true);
+// c::set('cache.ignore', array('excludeme', 'andme'));

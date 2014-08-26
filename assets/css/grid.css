@@ -3,9 +3,13 @@
 -------------------------------------------------- */
 
 /* --	Grid - Standard		--------------------- */
-.grid						{width:100%; min-width:768px; max-width:1360px; margin:0 auto; overflow:hidden; clear:both;}
+.grid						{width:100%; min-width:768px; max-width:1360px; margin:0 auto; overflow:hidden; clear:both; font-size:0em;}
 .grid .row					{display:block; width:100%; margin:0 auto; clear:both;}
-.grid .block				{display:inline-block; float:left; margin:0 auto; padding:10px;}
+.grid .block				{display:inline-block; margin:0 auto; padding:10px; float:left; font-size:14px;}
+
+/* --	Grid - Centered		--------------------- */
+.grid .row.centered			{text-align:center;}
+.grid .row.centered	 .block	{float:none; text-align:left;}
 
 /* --	Grid - Full Width	--------------------- */
 .grid.full					{max-width:none;}
@@ -48,7 +52,40 @@
 .grid .block.fourth			{max-width: 340px; width: 25.00%;}
 .grid .block.fifth			{max-width: 272px; width: 20.00%;}
 
-.grid .block.fluid			{width:auto!important;}
+.grid .block.fluid			{width:auto!important; max-width:100%!important;}
+
+/* --	Blocks - Bumps		--------------------- */
+.grid .block.preOne			{margin-left:  6.25%;}
+.grid .block.preTwo			{margin-left: 12.50%;}
+.grid .block.preThree		{margin-left: 18.75%;}
+.grid .block.preFour		{margin-left: 25.00%;}
+.grid .block.preFive		{margin-left: 31.25%;}
+.grid .block.preSix			{margin-left: 37.50%;}
+.grid .block.preSeven		{margin-left: 43.75%;}
+.grid .block.preEight		{margin-left: 50.00%;}
+.grid .block.preNine		{margin-left: 56.25%;}
+.grid .block.preTen			{margin-left: 62.50%;}
+.grid .block.preEleven		{margin-left: 68.75%;}
+.grid .block.preTwelve		{margin-left: 75.00%;}
+.grid .block.preThirteen	{margin-left: 81.25%;}
+.grid .block.preFourteen	{margin-left: 87.50%;}
+.grid .block.preFifteen		{margin-left: 93.75%;}
+
+.grid .block.postOne		{margin-right:  6.25%;}
+.grid .block.postTwo		{margin-right: 12.50%;}
+.grid .block.postThree		{margin-right: 18.75%;}
+.grid .block.postFour		{margin-right: 25.00%;}
+.grid .block.postFive		{margin-right: 31.25%;}
+.grid .block.postSix		{margin-right: 37.50%;}
+.grid .block.postSeven		{margin-right: 43.75%;}
+.grid .block.postEight		{margin-right: 50.00%;}
+.grid .block.postNine		{margin-right: 56.25%;}
+.grid .block.postTen		{margin-right: 62.50%;}
+.grid .block.postEleven		{margin-right: 68.75%;}
+.grid .block.postTwelve		{margin-right: 75.00%;}
+.grid .block.postThirteen	{margin-right: 81.25%;}
+.grid .block.postFourteen	{margin-right: 87.50%;}
+.grid .block.postFifteen	{margin-right: 93.75%;}
 
 @media only screen and (max-width: 768px) {
 .grid						{min-width:300px; max-width:768px;}
@@ -72,6 +109,14 @@
 .grid .block.fourteen		{max-width:none; width:100%;}
 .grid .block.fifteen		{max-width:none; width:100%;}
 .grid .block.sixteen		{max-width:none; width:100%;}
+
+/* --	Blocks - Bumps		--------------------- */
+.grid .block.preOne,.grid .block.preTwo,.grid .block.preThree,.grid .block.preFour,.grid .block.preFive,.grid .block.preSix,.grid .block.preSeven,.grid .block.preEight,
+.grid .block.preNine,.grid .block.preTen,.grid .block.preEleven,.grid .block.preTwelve,.grid .block.preThirteen,.grid .block.preFourteen,.grid .block.preFifteen,
+.grid .block.postOne,.grid .block.postTwo,.grid .block.postThree,.grid .block.postFour,.grid .block.postFive,.grid .block.postSix,.grid .block.postSeven,.grid .block.postEight,
+.grid .block.postNine,.grid .block.postTen,.grid .block.postEleven,.grid .block.postTwelve,.grid .block.postThirteen,.grid .block.postFourteen,.grid .block.postFifteen {
+	margin:0 auto;
+}
 
 }
 @media only screen and (max-width: 480px) {

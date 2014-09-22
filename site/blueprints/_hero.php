@@ -1,22 +1,11 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Hero
-pages: false
+title: Section (Hero)
+pages:
+  template:
+    - _section_column
+files: true
 fields:
   title:
     label: Title
     type:  text
-  copy:
-    label: Content
-    type:  textarea
-  layout:
-    label: Layouts
-    type:  select
-    options:
-      layout-a: Layout A (no preset style)
-      layout-b: Layout B
-      layout-c: Layout C
-      layout-d: Layout D
-      layout-e: Layout E
-      layout-f: Layout F
-    default: layout-a

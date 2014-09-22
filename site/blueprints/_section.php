@@ -1,12 +1,19 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Section (content block)
-pages: false
+title: Section (Grid)
+pages:
+  template:
+    - _section_column
 files: false
 fields:
   title:
     label: Title
     type:  text
-  copy:
-    label: Content
-    type:  text
+  span:
+    label: Span
+    type:  select
+    options:
+      normal: Normal
+      full:   Full Width
+      table:  Table
+    default: normal

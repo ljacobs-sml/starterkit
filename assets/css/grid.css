@@ -2,135 +2,138 @@
  :::  Grid
 -------------------------------------------------- */
 
+
 /* --	Grid - Standard		--------------------- */
-.grid						{width:100%; min-width:768px; max-width:1360px; margin:0 auto; overflow:hidden; clear:both; font-size:0em;}
-.grid .row					{display:block; width:100%; margin:0 auto; clear:both;}
-.grid .block				{display:inline-block; margin:0 auto; padding:10px; float:left; font-size:14px;}
+[am-Grid]										{width:100%; min-width:768px; max-width:1360px; margin:0 auto; overflow:hidden; clear:both; font-size:0em;}
+[am-Row]										{display:block; width:100%; margin:0 auto; clear:both;}
+[am-Col]										{display:inline-block; margin:0 auto; padding:10px; float:left; font-size:14px;}
 
 /* --	Grid - Centered		--------------------- */
-.grid .row.centered			{text-align:center;}
-.grid .row.centered	 .block	{float:none; text-align:left;}
+[am-Row~="centered"]							{text-align:center;}
+[am-Row~="centered"] [am-Col]					{float:none; text-align:left;}
 
 /* --	Grid - Full Width	--------------------- */
-.grid.full					{max-width:none;}
-.grid.full .row				{max-width:1360px;}
-.grid.full .row.full		{max-width:none; text-align:center; font-size:0;}
-.grid.full .row.full .block	{float:none; text-align:left;}
+[am-Grid~="full"]								{max-width:none;}
+[am-Grid~="full"] [am-Row]						{max-width:1360px;}
+[am-Grid~="full"] [am-Row~="full"]				{max-width:none; text-align:center; font-size:0;}
+[am-Grid~="full"] [am-Row~="full"] [am-Col]		{float:none; text-align:left; max-width:1360px; margin:0 auto;}
 
 /* --	Grid - Nested		--------------------- */
-.grid .block .grid			{min-width:none; max-width:none;}
-.grid .block .grid .row		{}
-.grid .block .block,
-.grid .block .grid .block	{padding:0;}
+[am-Grid] [am-Col] [am-Grid]					{min-width:none; max-width:none;}
+[am-Grid] [am-Col] [am-Grid] [am-Row]			{}
+[am-Grid] [am-Col] [am-Col],
+[am-Grid] [am-Col] [am-Grid] [am-Col]			{padding:0;}
 
 /* --	Grid - Table 		--------------------- */
-.grid.table .block			{display:table;}
-.grid.table .block .wrap	{display:table-cell; vertical-align:middle;}
+[am-Grid~="table"] [am-Col]						{display:table;}
+[am-Grid~="table"] [am-Col] .wrap				{display:table-cell;}
+[am-Grid~="table"] [am-Col] .wrap.top			{vertical-align:top;}
+[am-Grid~="table"] [am-Col] .wrap.middle		{vertical-align:middle;}
+[am-Grid~="table"] [am-Col] .wrap.bottom		{vertical-align:bottom;}
 
 
 /* --	Blocks - Widths		--------------------- */
-.grid .block.one			{max-width:  85px; width:  6.25%;}
-.grid .block.two			{max-width: 170px; width: 12.50%;}
-.grid .block.three			{max-width: 255px; width: 18.75%;}
-.grid .block.four			{max-width: 340px; width: 25.00%;}
-.grid .block.five			{max-width: 425px; width: 31.25%;}
-.grid .block.six			{max-width: 510px; width: 37.50%;}
-.grid .block.seven			{max-width: 595px; width: 43.75%;}
-.grid .block.eight			{max-width: 680px; width: 50.00%;}
-.grid .block.nine			{max-width: 765px; width: 56.25%;}
-.grid .block.ten			{max-width: 850px; width: 62.50%;}
-.grid .block.eleven			{max-width: 935ox; width: 68.75%;}
-.grid .block.twelve			{max-width:1020px; width: 75.00%;}
-.grid .block.thirteen		{max-width:1105px; width: 81.25%;}
-.grid .block.fourteen		{max-width:1190px; width: 87.50%;}
-.grid .block.fifteen		{max-width:1275px; width: 93.75%;}
-.grid .block.sixteen		{max-width:1360px; width:100.00%;}
+[am-Grid] [am-Col~="1"]							{max-width:  85px; width:  6.25%;}
+[am-Grid] [am-Col~="2"]							{max-width: 170px; width: 12.50%;}
+[am-Grid] [am-Col~="3"]							{max-width: 255px; width: 18.75%;}
+[am-Grid] [am-Col~="4"]							{max-width: 340px; width: 25.00%;}
+[am-Grid] [am-Col~="5"]							{max-width: 425px; width: 31.25%;}
+[am-Grid] [am-Col~="6"]							{max-width: 510px; width: 37.50%;}
+[am-Grid] [am-Col~="7"]							{max-width: 595px; width: 43.75%;}
+[am-Grid] [am-Col~="8"]							{max-width: 680px; width: 50.00%;}
+[am-Grid] [am-Col~="9"]							{max-width: 765px; width: 56.25%;}
+[am-Grid] [am-Col~="10"]						{max-width: 850px; width: 62.50%;}
+[am-Grid] [am-Col~="11"]						{max-width: 935ox; width: 68.75%;}
+[am-Grid] [am-Col~="12"]						{max-width:1020px; width: 75.00%;}
+[am-Grid] [am-Col~="13"]						{max-width:1105px; width: 81.25%;}
+[am-Grid] [am-Col~="14"]						{max-width:1190px; width: 87.50%;}
+[am-Grid] [am-Col~="15"]						{max-width:1275px; width: 93.75%;}
+[am-Grid] [am-Col~="16"]						{max-width:1360px; width:100.00%;}
 
-.grid .block.full			{max-width:1360px; width:100.00%;}
-.grid .block.half			{max-width: 680px; width: 50.00%;}
-.grid .block.third			{max-width: 454px; width: 33.333333%;}
-.grid .block.fourth			{max-width: 340px; width: 25.00%;}
-.grid .block.fifth			{max-width: 272px; width: 20.00%;}
+[am-Grid] [am-Col~="full"]						{max-width:1360px; width:100.00%;}
+[am-Grid] [am-Col~="half"]						{max-width: 680px; width: 50.00%;}
+[am-Grid] [am-Col~="third"]						{max-width: 454px; width: 33.333333%;}
+[am-Grid] [am-Col~="fourth"]					{max-width: 340px; width: 25.00%;}
+[am-Grid] [am-Col~="fifth"]						{max-width: 272px; width: 20.00%;}
 
-.grid .block.fluid			{width:auto!important; max-width:100%!important;}
+[am-Grid] [am-Col~="auto"]						{width:auto!important;}
 
 /* --	Blocks - Bumps		--------------------- */
-.grid .block.preOne			{margin-left:  6.25%;}
-.grid .block.preTwo			{margin-left: 12.50%;}
-.grid .block.preThree		{margin-left: 18.75%;}
-.grid .block.preFour		{margin-left: 25.00%;}
-.grid .block.preFive		{margin-left: 31.25%;}
-.grid .block.preSix			{margin-left: 37.50%;}
-.grid .block.preSeven		{margin-left: 43.75%;}
-.grid .block.preEight		{margin-left: 50.00%;}
-.grid .block.preNine		{margin-left: 56.25%;}
-.grid .block.preTen			{margin-left: 62.50%;}
-.grid .block.preEleven		{margin-left: 68.75%;}
-.grid .block.preTwelve		{margin-left: 75.00%;}
-.grid .block.preThirteen	{margin-left: 81.25%;}
-.grid .block.preFourteen	{margin-left: 87.50%;}
-.grid .block.preFifteen		{margin-left: 93.75%;}
+[am-Grid] [am-Col~="preOne"]					{margin-left:  6.25%;}
+[am-Grid] [am-Col~="preTwo"]					{margin-left: 12.50%;}
+[am-Grid] [am-Col~="preThree"]					{margin-left: 18.75%;}
+[am-Grid] [am-Col~="preFour"]					{margin-left: 25.00%;}
+[am-Grid] [am-Col~="preFive"]					{margin-left: 31.25%;}
+[am-Grid] [am-Col~="preSix"]					{margin-left: 37.50%;}
+[am-Grid] [am-Col~="preSeven"]					{margin-left: 43.75%;}
+[am-Grid] [am-Col~="preEight"]					{margin-left: 50.00%;}
+[am-Grid] [am-Col~="preNine"]					{margin-left: 56.25%;}
+[am-Grid] [am-Col~="preTen"]					{margin-left: 62.50%;}
+[am-Grid] [am-Col~="preEleven"]					{margin-left: 68.75%;}
+[am-Grid] [am-Col~="preTwelve"]					{margin-left: 75.00%;}
+[am-Grid] [am-Col~="preThirteen"]				{margin-left: 81.25%;}
+[am-Grid] [am-Col~="preFourteen"]				{margin-left: 87.50%;}
+[am-Grid] [am-Col~="preFifteen"]				{margin-left: 93.75%;}
 
-.grid .block.postOne		{margin-right:  6.25%;}
-.grid .block.postTwo		{margin-right: 12.50%;}
-.grid .block.postThree		{margin-right: 18.75%;}
-.grid .block.postFour		{margin-right: 25.00%;}
-.grid .block.postFive		{margin-right: 31.25%;}
-.grid .block.postSix		{margin-right: 37.50%;}
-.grid .block.postSeven		{margin-right: 43.75%;}
-.grid .block.postEight		{margin-right: 50.00%;}
-.grid .block.postNine		{margin-right: 56.25%;}
-.grid .block.postTen		{margin-right: 62.50%;}
-.grid .block.postEleven		{margin-right: 68.75%;}
-.grid .block.postTwelve		{margin-right: 75.00%;}
-.grid .block.postThirteen	{margin-right: 81.25%;}
-.grid .block.postFourteen	{margin-right: 87.50%;}
-.grid .block.postFifteen	{margin-right: 93.75%;}
+[am-Grid] [am-Col~="postOne"]					{margin-right:  6.25%;}
+[am-Grid] [am-Col~="postTwo"]					{margin-right: 12.50%;}
+[am-Grid] [am-Col~="postThree"]					{margin-right: 18.75%;}
+[am-Grid] [am-Col~="postFour"]					{margin-right: 25.00%;}
+[am-Grid] [am-Col~="postFive"]					{margin-right: 31.25%;}
+[am-Grid] [am-Col~="postSix"]					{margin-right: 37.50%;}
+[am-Grid] [am-Col~="postSeven"]					{margin-right: 43.75%;}
+[am-Grid] [am-Col~="postEight"]					{margin-right: 50.00%;}
+[am-Grid] [am-Col~="postNine"]					{margin-right: 56.25%;}
+[am-Grid] [am-Col~="postTen"]					{margin-right: 62.50%;}
+[am-Grid] [am-Col~="postEleven"]				{margin-right: 68.75%;}
+[am-Grid] [am-Col~="postTwelve"]				{margin-right: 75.00%;}
+[am-Grid] [am-Col~="postThirteen"]				{margin-right: 81.25%;}
+[am-Grid] [am-Col~="postFourteen"]				{margin-right: 87.50%;}
+[am-Grid] [am-Col~="postFifteen"]				{margin-right: 93.75%;}
 
 @media only screen and (max-width: 768px) {
-.grid						{min-width:300px; max-width:768px;}
-.grid .block				{padding:5px;}
-.grid .block .grid .block	{padding:0;}
+[am-Grid]										{min-width:300px; max-width:768px;}
+[am-Grid] [am-Col]								{padding:5px;}
+[am-Grid] [am-Col] [am-Grid] [am-Col]			{padding:0;}
 
 /* --	Blocks - Widths		--------------------- */
-.grid .block.one			{max-width:none; width: 50%;}
-.grid .block.two			{max-width:none; width: 50%;}
-.grid .block.three			{max-width:none; width: 50%;}
-.grid .block.four			{max-width:none; width: 50%;}
-.grid .block.five			{max-width:none; width: 50%;}
-.grid .block.six			{max-width:none; width: 50%;}
-.grid .block.seven			{max-width:none; width: 50%;}
-.grid .block.eight			{max-width:none; width: 50%;}
-.grid .block.nine			{max-width:none; width:100%;}
-.grid .block.ten			{max-width:none; width:100%;}
-.grid .block.eleven			{max-width:none; width:100%;}
-.grid .block.twelve			{max-width:none; width:100%;}
-.grid .block.thirteen		{max-width:none; width:100%;}
-.grid .block.fourteen		{max-width:none; width:100%;}
-.grid .block.fifteen		{max-width:none; width:100%;}
-.grid .block.sixteen		{max-width:none; width:100%;}
+[am-Grid] [am-Col~="1"]							{max-width:none; width: 50%;}
+[am-Grid] [am-Col~="2"]							{max-width:none; width: 50%;}
+[am-Grid] [am-Col~="3"]							{max-width:none; width: 50%;}
+[am-Grid] [am-Col~="4"]							{max-width:none; width: 50%;}
+[am-Grid] [am-Col~="5"]							{max-width:none; width: 50%;}
+[am-Grid] [am-Col~="6"]							{max-width:none; width: 50%;}
+[am-Grid] [am-Col~="7"]							{max-width:none; width: 50%;}
+[am-Grid] [am-Col~="8"]							{max-width:none; width: 50%;}
+[am-Grid] [am-Col~="9"]							{max-width:none; width:100%;}
+[am-Grid] [am-Col~="10"]						{max-width:none; width:100%;}
+[am-Grid] [am-Col~="11"]						{max-width:none; width:100%;}
+[am-Grid] [am-Col~="12"]						{max-width:none; width:100%;}
+[am-Grid] [am-Col~="13"]						{max-width:none; width:100%;}
+[am-Grid] [am-Col~="14"]						{max-width:none; width:100%;}
+[am-Grid] [am-Col~="15"]						{max-width:none; width:100%;}
+[am-Grid] [am-Col~="16"]						{max-width:none; width:100%;}
 
 /* --	Blocks - Bumps		--------------------- */
-.grid .block.preOne,.grid .block.preTwo,.grid .block.preThree,.grid .block.preFour,.grid .block.preFive,.grid .block.preSix,.grid .block.preSeven,.grid .block.preEight,
-.grid .block.preNine,.grid .block.preTen,.grid .block.preEleven,.grid .block.preTwelve,.grid .block.preThirteen,.grid .block.preFourteen,.grid .block.preFifteen,
-.grid .block.postOne,.grid .block.postTwo,.grid .block.postThree,.grid .block.postFour,.grid .block.postFive,.grid .block.postSix,.grid .block.postSeven,.grid .block.postEight,
-.grid .block.postNine,.grid .block.postTen,.grid .block.postEleven,.grid .block.postTwelve,.grid .block.postThirteen,.grid .block.postFourteen,.grid .block.postFifteen {
+[am-Grid] [am-Col~="preOne"],[am-Grid] [am-Col~="preTwo"],[am-Grid] [am-Col~="preThree"],[am-Grid] [am-Col~="preFour"],[am-Grid] [am-Col~="preFive"],[am-Grid] [am-Col~="preSix"],[am-Grid] [am-Col~="preSeven"],[am-Grid] [am-Col~="preEight"],
+[am-Grid] [am-Col~="preNine"],[am-Grid] [am-Col~="preTen"],[am-Grid] [am-Col~="preEleven"],[am-Grid] [am-Col~="preTwelve"],[am-Grid] [am-Col~="preThirteen"],[am-Grid] [am-Col~="preFourteen"],[am-Grid] [am-Col~="preFifteen"],
+[am-Grid] [am-Col~="postOne"],[am-Grid] [am-Col~="postTwo"],[am-Grid] [am-Col~="postThree"],[am-Grid] [am-Col~="postFour"],[am-Grid] [am-Col~="postFive"],[am-Grid] [am-Col~="postSix"],[am-Grid] [am-Col~="postSeven"],[am-Grid] [am-Col~="postEight"],
+[am-Grid] [am-Col~="postNine"],[am-Grid] [am-Col~="postTen"],[am-Grid] [am-Col~="postEleven"],[am-Grid] [am-Col~="postTwelve"],[am-Grid] [am-Col~="postThirteen"],[am-Grid] [am-Col~="postFourteen"],[am-Grid] [am-Col~="postFifteen"] {
 	margin:0 auto;
 }
-
 }
 @media only screen and (max-width: 480px) {
-.grid .block				{padding:2px;}
+[am-Grid] [am-Col]								{padding:2px;}
 
 /* --	Blocks - Widths		--------------------- */
-.grid .block.one			{width:100%;}
-.grid .block.two			{width:100%;}
-.grid .block.three			{width:100%;}
-.grid .block.four			{width:100%;}
-.grid .block.five			{width:100%;}
-.grid .block.six			{width:100%;}
-.grid .block.seven			{width:100%;}
-.grid .block.eight			{width:100%;}
+[am-Grid] [am-Col~="1"]							{width:100%;}
+[am-Grid] [am-Col~="2"]							{width:100%;}
+[am-Grid] [am-Col~="3"]							{width:100%;}
+[am-Grid] [am-Col~="4"]							{width:100%;}
+[am-Grid] [am-Col~="5"]							{width:100%;}
+[am-Grid] [am-Col~="6"]							{width:100%;}
+[am-Grid] [am-Col~="7"]							{width:100%;}
+[am-Grid] [am-Col~="8"]							{width:100%;}
 }
 
 /*

@@ -1,58 +1,58 @@
-Title:
+Title: 
 
-Crisp Concepts
+Title
 
 ----
 
-Author:
+Author: 
 
 Luke Jacobs
 
 ----
 
-Description:
+Description: 
 
 Full Service Web Design & Management
 
 ----
 
-Copyright:
+Copyright: 
 
 Follow us on (link: # text: Google+) and (link: # text: Facebook)
 © (date: Year) (link: http://www.crispconcepts.net text: CrispConcepts.net)
 
 ----
 
-Slogan:
+Slogan: 
 
 Full Service Web Design & Management
 
 ----
 
-Phone:
+Phone: 
 
 (908)-328-7264
 
 ----
 
-Email:
+Email: 
 
 contact@crispconcepts.net
 
 ----
 
-Meta-author:
+Meta-author: 
 
 CrispConcepts.net
 
 ----
 
-Meta-description:
+Meta-description: 
 
 Full service web hosting, development and management services located in Hunterdon County, NJ.
 
 ----
 
-Meta-keywords:
+Meta-keywords: 
 
 Web Hosting, Web Design, Web Management, Web Development, Graphic Design, Graphic Services

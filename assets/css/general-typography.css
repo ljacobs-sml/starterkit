@@ -1,7 +1,8 @@
 /*
  :::  Fonts
 -------------------------------------------------- */
-body						{font-family: "Trajan Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";}
+body						{font-family: "Lucida Grande","Lucida Sans Unicode","Helvetica","Arial","Verdana","sans-serif";}
+
 
 /*
  :::  Links
@@ -15,14 +16,14 @@ nav a:hover					{color: #222; border-bottom:1px solid #222;}
 /*
  :::  Headings
 -------------------------------------------------- */
-h1,h2,h3,h4,h5,h6			{line-height:1.2em; font-weight:200; letter-spacing:1px;}
+h1,h2,h3,h4,h5,h6			{line-height:1.2em; font-weight:200; letter-spacing:1px; font-family: "Trajan Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif"; color:#444;}
 h1							{font-size:48px;}
-h2							{font-size:36px; color:#888;}
+h2							{font-size:36px;}
 h3							{font-size:30px;}
 h4							{font-size:24px;}
 h5							{font-size:20px;}
 h6							{font-size:16px;}
-p							{font-size:16px; line-height:1.75em; color:#222;}
+p							{font-size:16px; line-height:1.70em; color:#888; padding:0; margin:0;}
 
 @media only screen and (max-width: 1440px) {
 }

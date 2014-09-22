@@ -1,7 +1,7 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Home
-pages: 
+pages:
   template:
     - _submenu
     - _hero

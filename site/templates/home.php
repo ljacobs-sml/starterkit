@@ -9,7 +9,7 @@
 
 <? // Template Specific Blocks
 if($section->template() == '_submenu'):		snippet('submenu',	$sectionArray);
-elseif($section->template() == '_hero'):		snippet('hero',		$sectionArray);
+elseif($section->template() == '_hero'):	snippet('hero',		$sectionArray);
 elseif($section->template() == '_section'):	snippet('section',	$sectionArray);
 else:
 ?>

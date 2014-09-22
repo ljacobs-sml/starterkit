@@ -1,0 +1,28 @@
+Title: 
+
+Column 2
+
+----
+
+Span: 
+
+6
+
+----
+
+Copy: 
+
+### Image Column
+##### Hero -> Image
+
+----
+
+Line-a: 
+
+
+
+----
+
+Valign: 
+
+top

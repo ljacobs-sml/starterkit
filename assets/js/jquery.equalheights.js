@@ -8,8 +8,8 @@
  *
  * @version 1.6.0 (MODIFIED)
  */
- 
-$(".grid.table .row").attr('data-equal','.block');
+
+$("[am-Grid='table'] [am-Row]").attr('data-equal','[am-Col] .wrap');
 
 (function($) {
 
@@ -19,11 +19,13 @@ $(".grid.table .row").attr('data-equal','.block');
 
         $this.each( function() {
             var height = $(this).innerHeight();
-			var width = ( 100 * parseFloat($(this).css('width')) / parseFloat($(this).parent().css('width')) ) + '%';
-            if ( height > maxHeight && width != '100%' ) { maxHeight = height; }
+            var cWidth = $(this).width();
+            var pWidth = $(this).offsetParent().width();
+            var width  = ( 100*cWidth/pWidth );
+            if ( height > maxHeight ) { maxHeight = height; }
         });
 
-        return $this.css('height', maxHeight);
+        return $this.css({'height' : maxHeight});
     };
 
     // auto-initialize plugin with data-equal attribute
@@ -32,7 +34,7 @@ $(".grid.table .row").attr('data-equal','.block');
             target = $this.data('equal');
         return $this.find(target).equalHeights();
     });
-	
+
 	// re-initialize on window resize
 	$(window).resize(function(){
 		$('[data-equal]').each(function(){

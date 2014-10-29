@@ -6,7 +6,7 @@
 /* --	Grid - Standard		--------------------- */
 [am-Grid]										{width:100%; min-width:768px; max-width:1360px; margin:0 auto; overflow:hidden; clear:both; font-size:0em;}
 [am-Row]										{display:block; width:100%; margin:0 auto; clear:both;}
-[am-Col]										{display:inline-block; margin:0 auto; padding:10px; float:left; font-size:14px;}
+[am-Col]										{display:inline-block; margin:0 auto; padding:10px 25px; float:left; font-size:14px;}
 
 /* --	Grid - Centered		--------------------- */
 [am-Row~="centered"]							{text-align:center;}
@@ -21,8 +21,10 @@
 /* --	Grid - Nested		--------------------- */
 [am-Grid] [am-Col] [am-Grid]					{min-width:none; max-width:none;}
 [am-Grid] [am-Col] [am-Grid] [am-Row]			{}
-[am-Grid] [am-Col] [am-Col],
-[am-Grid] [am-Col] [am-Grid] [am-Col]			{padding:0;}
+[am-Grid] [am-Col] [am-Grid] [am-Col]:first-child,
+[am-Grid] [am-Col] [am-Col]:first-child			{padding-left:0;}
+[am-Grid] [am-Col] [am-Grid] [am-Col]:last-child,
+[am-Grid] [am-Col] [am-Col]:last-child			{padding-right:0;}
 
 /* --	Grid - Table 		--------------------- */
 [am-Grid~="table"] [am-Col]						{display:table;}
@@ -30,7 +32,6 @@
 [am-Grid~="table"] [am-Col] .wrap.top			{vertical-align:top;}
 [am-Grid~="table"] [am-Col] .wrap.middle		{vertical-align:middle;}
 [am-Grid~="table"] [am-Col] .wrap.bottom		{vertical-align:bottom;}
-
 
 /* --	Blocks - Widths		--------------------- */
 [am-Grid] [am-Col~="1"]							{max-width:  85px; width:  6.25%;}
@@ -93,8 +94,11 @@
 
 @media only screen and (max-width: 768px) {
 [am-Grid]										{min-width:300px; max-width:768px;}
-[am-Grid] [am-Col]								{padding:5px;}
-[am-Grid] [am-Col] [am-Grid] [am-Col]			{padding:0;}
+[am-Grid] [am-Col]								{padding:5px 20px;}
+[am-Grid] [am-Col] [am-Grid] [am-Col]:first-child,
+[am-Grid] [am-Col] [am-Col]:first-child			{padding-left:0;}
+[am-Grid] [am-Col] [am-Grid] [am-Col]:last-child,
+[am-Grid] [am-Col] [am-Col]:last-child			{padding-right:0;}
 
 /* --	Blocks - Widths		--------------------- */
 [am-Grid] [am-Col~="1"]							{max-width:none; width: 50%;}
@@ -135,6 +139,10 @@
 [am-Grid] [am-Col~="7"]							{width:100%;}
 [am-Grid] [am-Col~="8"]							{width:100%;}
 }
+
+/* --	Grid - Table 		--------------------- */
+[am-Grid~="table"] [am-Col]						{display:inline-block;}
+[am-Grid~="table"] [am-Col] .wrap				{display:block; height:auto!important;}
 
 /*
  :::  Clearfix

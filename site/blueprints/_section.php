@@ -3,6 +3,7 @@
 title: Section (Grid)
 pages:
   template:
+    - _section_row
     - _section_column
 files: false
 fields:

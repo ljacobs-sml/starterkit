@@ -12,12 +12,13 @@ c::set('license', 'put your license key here');
  **************************************/
 
 c::set('url', '/');
+c::set('markdown.extra', 'true');
 
 
 /*
  *	Global Variables
  **************************************/
- 
+
 
 /*
  *	Site Cache Settings

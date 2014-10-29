@@ -1,0 +1,14 @@
+Title: The Company
+
+----
+
+Span: 16
+
+----
+
+Copy: ## The Company
+Founded in 2012, Crisp Concepts has been bringing modern web design & development trends to small and large clients alike. We focus on several key areas that are important in today's world, including responsive development and SEO compatability.
+
+----
+
+Valign: top

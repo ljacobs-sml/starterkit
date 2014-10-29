@@ -9,7 +9,7 @@ echo '<div am-Row="normal" class="cf">';
 foreach($content->children()->visible() as $a):
 
 
-	if($a->template() == '_section_column'):
+	if($a->intendedTemplate() == '_section_column'):
 
 		$currentSpan = html($a->span());
 		if(($spanCount+(int)$currentSpan) <= 16):

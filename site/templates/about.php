@@ -8,23 +8,13 @@
 ?>
 
 <? // Template Specific Blocks
-if($section->template()     == '_submenu'):	snippet('submenu',	$sectionArray);
-elseif($section->template() == '_hero'):	snippet('hero',		$sectionArray);
-elseif($section->template() == '_section'):	snippet('section',	$sectionArray);
+if($section->intendedTemplate()     == '_submenu'):	snippet('submenu',	$sectionArray);
+elseif($section->intendedTemplate() == '_hero'):	snippet('hero',		$sectionArray);
+elseif($section->intendedTemplate() == '_section'):	snippet('section',	$sectionArray);
 else:
 ?>
 
 <? endif ?>
 <? endforeach // $section ?>
-
-<? if($page->copy()): ?>
-<div am-Grid="normal" id="pageContent" class="cf">
-	<div am-Row="normal" class="cf">
-		<div am-Col="sixteen">
-			<? echo kirbytext($page->copy()) ?>
-		</div>
-	</div>
-</div>
-<? endif ?>
 
 <? snippet('footer') ?>
